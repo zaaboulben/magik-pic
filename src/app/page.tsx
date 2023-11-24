@@ -1,12 +1,13 @@
-import Image from 'next/image'
-import UploadPic from './Component/UploadPic'
-import DrawSt from './Component/DrawSt'
+
+import React from 'react'
+import DrawingW from './Component/Ui/element/test/DrawingW'
+
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-  {/* <UploadPic/> */}
-  <DrawSt width={600} height={600} />
+    <main className="flex w-screen h-screen   bg-background overflow-hidden">
+
+      <DrawingW />
     </main>
   )
 }
